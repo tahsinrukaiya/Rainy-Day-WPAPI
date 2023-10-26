@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<head>
+  <title>RAINYDAYS_Product_Detail</title>
+  <meta name="description" content="product detail page of RAINYDAYS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script defer src="js/productDetail.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_product_detail.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/04b32c1ad2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="top_navigation">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <image src="images/logo-1.png" alt="rainydays logo">
+
+      <ul>
+        <li><a class="nav_link" href="index.html">Home</a></li>
+        <li><a class="nav_link" href="men.html">Men</a></li>
+        <li><a class="nav_link" href="women.html">Women</a></li>
+        <li><a class="nav_link" href="kids.html">Kids</a></li>
+        <li><a class="nav_link" href="outlet.html"><span class="sale">Outlet</span></a></li>
+        <li><a class="nav_link" href="about.html">About Us</a></li>
+        <li><a class="nav_link" href="contact.html">Contact Us</a></li>
+        <li><a class="nav_link" href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        <li><a class="nav_link" href="cart_summery.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+      </ul>
+
+      <div class="search_box">
+        <input type="search" placeholder="serch by product's name">
+        <span class="fa-solid fa-magnifying-glass"></span>
+      </div>
+  </nav>
+
+  <!------------------------------SINGLE PRODUCT DETAIL SECTION-------------------------------------->
+  <div class="location">
+    Home/Women/Product Detail
+  </div>
+  <div class="product_container">
+    <img src="" alt="" class="image_container">
+    <div class="product_detail">
+      <p class="jacketId"></p>
+      <h2 class="jacketTitle"></h2>
+      <h5 class="price"></h5>
+      <h5 class="gender"></h5>
+      <h5 class="season">Season : Autumn/Spring</h5>
+      <h5 class="basecolor"></h5>
+
+      <div class="color">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <select class="sizes">
+        <option>Select Size</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+      <h5 class="quantity">Quantity</h5>
+      <input type="number" value="1">
+      <button class="btn_addToCart">
+        <a href="cart_summery.html" class="btn">Add To Cart</a>
+      </button>
+      <button class="btn_checkOut">
+        <a href="checkout.html" class="btn">Buy Now</a>
+      </button>
+    </div>
+  </div>
+
+  <h3 class="description">Product Detail</h3>
+  <div class="detail">
+    <div class="material">
+      <h4>Product Material</h4>
+      <p>
+        Weather-protective and made for all kind of adventures in the forest and mountains.
+        Contains three layers materials with 15% plant based Ecodear Polyster. Waterproff and comfortable in any season
+        Comfortable and quick drying materials.</p>
+    </div>
+    <div class="wash">
+      <h4>Wash</h4>
+      <p>Delicate wash maximum 40 degree</p>
+    </div>
+    <div class="sustainability">
+      <h4>Sustainability</h4>
+      <p>Every product on our store can be used on a long time. If the product you bought from us is damaged, you can
+        come back to
+        us , we can repair it. And if your product is old and you no longer want to wear it, you can give us the product
+        , we will sell it
+        to second hand market.
+      </p>
+    </div>
+    <div class="reviews">
+      <h4>Reviews</h4>
+      <p>Eva:⭐⭐⭐⭐⭐</p>
+      <p> Nathalia:⭐⭐⭐⭐⭐</p>
+      <p> Julie:⭐⭐⭐⭐</p>
+      <p> Kari:⭐⭐⭐⭐</p>
+
+      </p>
+    </div>
+  </div>
+
+  <div class="icons">
+    <div class="waterproof"><img src="icons/waterproof.png">
+      <p>Waterproof</p>
+    </div>
+    <div class="windproof"><img src="icons/windproof.png">
+      <p>Windproof</p>
+    </div>
+    <div class="ecofriendly"><img src="icons/sustainable.png">
+      <p>Sustainable</p>
+    </div>
+  </div>
+  <div class="extra_info">
+    <h3>FREE DELIVERY OVER 500KR</h3>
+    <h3>FREE RETURN</h3>
+    <h3>DELIVERY TO DOOR</h3>
+  </div>
+
+
+
+
+  <!------------------PREVIOUS HARd CODED DATA------------SINGLE PRODUCT DETAIL SECTION--------------------✔️ 
+  <div class="small_container">
+    <div class="gallery">
+      <img src="images/men jackets/jac8.png" alt="blue jacket">
+    </div>
+    <div class="details">
+      <h2>Urberg Malmefjorden Pu Parka<h2>
+          <h5>2350kr<h5>
+              <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+              <input type="number" value="1">
+              <button>
+                <a href="checkOut.html" class="btn">Add To Cart</a>
+              </button>
+
+              <p>
+              <h3>Product Specifications</h3>
+              Water column 10,000mm
+              breathability 10,000mvp
+              taped seams
+              two-way zip and button closure
+              Stategically placed reflective details
+              <p>materials: 100% nylon
+                color code: WUM</p>
+              <p>Article number: 5600089</p>
+              <p>
+                Washing and Maintanance
+                delicate wash max 40 degree
+                does not tolerate bleaching</p>
+    </div>
+  </div>
+------------------>
+
+
+  <!---------------------------------------FOOTER SECTION-------------------------------------------->
+
+  <footer>
+    <div class="container_product_detail">
+      <div class="footer_main">
+        <div class="footer_column">
+          <h3>Useful Links</h3>
+          <a href="#" class="footer_links">Our History</a>
+          <a href="#" class="footer_links">Contact</a>
+          <a href="#" class="footer_links">Business Partner</a>
+          <a href="#" class="footer_links">Careers</a>
+        </div>
+        <div class="footer_column">
+          <h3>Get Newsletter</h3>
+          <form>
+            <input type="email" placeholder="Your E-mail Address"><br>
+            <button type="submit">SUBSCRIBE NOW</button>
+          </form>
+        </div>
+        <div class="footer_column">
+          <h3>Customer Care</h3>
+          <p>Mail us in rainydays.gmail.com</p>
+          <p>Call us +0047 345783433</p>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <span class="copyright">&copy; 2023 rainydays</span>
+        <a href="footer_social"><i class="fa-brands fa-facebook"></i></a>
+        <a href="footer_social"><i class="fa-brands fa-instagram"></i></a>
+        <a href="footer_social"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  </html>

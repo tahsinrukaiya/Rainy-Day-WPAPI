@@ -1,0 +1,118 @@
+footer {
+    background-color: #001C30;
+    color: white;
+    padding: 4rem 1rem;
+    height: 200px;
+    margin-top: 50% !important;
+}
+
+.form_container {
+    width: 100%;
+    background-color: white;
+    max-width: 650px;
+    margin-top: 100px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-color: #001C30;
+}
+
+.form_title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #001C30;
+    border-bottom: solid 1px white;
+}
+
+.form_2nd_title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #001C30;
+    border-bottom: solid 1px white;
+}
+
+.users_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.users_input_box:nth-child(2n) {
+    justify-content: end;
+}
+
+.users_input_box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.userinfo_submitbtn {
+    color: #001C30;
+
+}
+
+.users_input_box label {
+    width: 95%;
+    color: #001C30;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.users_input_box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.userinfo_submitbtn a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #001C30;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    .form_container {
+        min-width: 200px;
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    .users_input_box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .users_input_box:nth-child(2n) {
+        justify-content: space-between;
+    }
+
+    .users_info {
+        max-height: 380px;
+        overflow: auto;
+        padding: 60px;
+    }
+
+    .users_info::-webkit-scrollbar {
+        width: 0;
+    }
+
+}

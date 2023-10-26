@@ -1,0 +1,65 @@
+.outletJacketContainer {
+  margin-top: 3%;
+}
+
+.outletJacketContainer h2.heading {
+  text-align: center;
+  color: #945c54;
+  font-size: 30px;
+}
+
+.outletJacketContainer .outletContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+
+}
+
+.outletJacketContainer .outletContainer .jacket {
+  border-radius: .5px;
+  background: #fcfbfa;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.outletJacketContainer .outletContainer .jacket img {
+  height: 250px;
+  width: 200px;
+}
+
+.outletJacketContainer .outletContainer .jacket h3 {
+  color: #393E46;
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.outletJacketContainer .outletContainer .jacket p {
+  color: #393E46;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.outletJacketContainer .outletContainer .jacket .btn {
+  margin-top: 0;
+  display: inline-block;
+  background: #393E46;
+  color: white;
+  font-size: 17px;
+  width: 50%;
+  padding: 8px 25px;
+  text-decoration: none;
+}
+
+.outletJacketContainer .outletContainer .jacket .btn:hover {
+  letter-spacing: 1px;
+}
+
+.outletJacketContainer .outletContainer .jacket:hover {
+  transform: scale(1.02);
+}
+
+.jacket a {
+  text-decoration: none;
+  color: #393E46;
+}

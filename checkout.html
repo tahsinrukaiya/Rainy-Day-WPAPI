@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RAINYDAYS_CheckOut</title>
+    <meta name="description" content="Check Out page of RAINYDAYS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_checkout.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/04b32c1ad2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="top_navigation">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <image src="images/logo-1.png" alt="rainydays logo">
+
+            <ul>
+                <li><a class="nav_link" href="index.html">Home</a></li>
+                <li><a class="nav_link" href="men.html">Men</a></li>
+                <li><a class="nav_link" href="women.html">Women</a></li>
+                <li><a class="nav_link" href="kids.html">Kids</a></li>
+                <li><a class="nav_link" href="outlet.html"><span class="sale">Outlet</span></a></li>
+                <li><a class="nav_link" href="about.html">About Us</a></li>
+                <li><a class="nav_link" href="contact.html">Contact Us</a></li>
+                <li><a class="nav_link" href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li><a class="nav_link" href="cart_summery.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+
+            <div class="search_box">
+                <input type="search" placeholder="serch by product's name">
+                <span class="fa-solid fa-magnifying-glass"></span>
+            </div>
+    </nav>
+
+    <div class="form_container">
+        <h1 class="form_title">Shipping Address & Payments</h1>
+        <form class="form_1" action="checkout_success.html">
+            <div class="users_info">
+                <div class="users_input_box">
+                    <label for="fullname">FULL NAME</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name">
+                </div>
+                <div class="users_input_box">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Your Email">
+                </div>
+                <div class="users_input_box">
+                    <label for="city">CITY</label>
+                    <input type="text" id="city" name="city" placeholder="Enter Your City Name">
+                </div>
+                <div class="users_input_box">
+                    <label for="postcode">POSTAL CODE</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="Enter Your Postal Code">
+                </div>
+                <div class="users_input_box">
+                    <label for="address">STREET NAME</label>
+                    <input type="text" id="address" name="address" placeholder="Enter Street's Name">
+                </div>
+                <div class="users_input_box">
+                    <label for="card_number">CARD NUMBER</label>
+                    <input type="text" id="card_number" name="card_number" placeholder="Enter The Card Number">
+                </div>
+                <div class="users_input_box">
+                    <label for="exp_date">EXPIRED DATE</label>
+                    <input type="date" id="exp_date" name="exp_date" placeholder="Enter Expired Date">
+                </div>
+                <div class="users_input_box">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Enter The Cvv Number Of Your Card">
+                </div>
+            </div>
+
+            <div class="userinfo_submitbtn">
+                <a href="checkout_success.html">Proceed To Check Out</a>
+            </div>
+        </form>
+    </div>
+    <!--------------------------FOOTER SECTION-------------------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_column">
+                    <h3>Useful Links</h3>
+                    <a href="#" class="footer_links">Our History</a>
+                    <a href="#" class="footer_links">Contact</a>
+                    <a href="#" class="footer_links">Business Partner</a>
+                    <a href="#" class="footer_links">Careers</a>
+                </div>
+                <div class="footer_column">
+                    <h3>Get Newsletter</h3>
+                    <form class="footer_form">
+                        <input type="email" placeholder="Your E-mail Address"><br>
+                        <button type="submit">SUBSCRIBE NOW</button>
+                    </form>
+                </div>
+                <div class="footer_column">
+                    <h3>Customer Care</h3>
+                    <p>Mail us in rainydays.gmail.com</p>
+                    <p>Call us +0047 345783433</p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <span class="copyright">&copy; 2023 rainydays</span>
+                <a href="footer_social"><i class="fa-brands fa-facebook"></i></a>
+                <a href="footer_social"><i class="fa-brands fa-instagram"></i></a>
+                <a href="footer_social"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

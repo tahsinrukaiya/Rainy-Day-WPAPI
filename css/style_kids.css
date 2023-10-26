@@ -1,0 +1,44 @@
+.banner_kids {
+    background-image: url(../images/kidsfun.jpg);
+    height: 500px;
+    width: 50%;
+    margin-top: 3%;
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center 100%;
+}
+
+.kids_banner_text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 50%;
+    margin-left: 30%;
+    text-align: start;
+    background: rgba(0, 0, 0, .5);
+    padding: 15px;
+    position: relative;
+    right: 30%;
+    color: white;
+}
+
+footer {
+    background-color: #393E46;
+    color: white;
+    padding: 4rem 1rem;
+    height: 200px;
+    margin-top: 40% !important;
+}
+
+
+
+@media screen and (min-width:1900px) {
+    .kids_banner_text h1 {
+        margin-top: 40%;
+
+    }
+
+
+}

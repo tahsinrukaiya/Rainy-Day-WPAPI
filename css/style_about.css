@@ -1,0 +1,153 @@
+.main {
+  display: flex;
+}
+
+.main .text_container {
+  margin-left: 10%;
+  margin-top: 3%;
+  padding: 5px;
+  width: 40%;
+}
+
+
+.main .text_container h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #945c54;
+  font-weight: 100;
+}
+
+.main .text_container p {
+  color: black;
+}
+
+.main .image_container {
+  display: flex;
+  height: 380px;
+  width: 390px;
+  padding-left: 15px;
+  margin-left: 10%;
+  margin-top: 2%;
+  position: relative;
+  left: -5%;
+  top: 30px;
+}
+
+
+/*--------------------------------HERE BEGINS THE FOOTER STYLING-------------------------------------------------*/
+
+footer {
+  background-color: #393E46;
+  color: white;
+  padding: 4rem 1rem;
+  height: 200px;
+  margin-top: 10%;
+}
+
+footer h3 {
+  font-weight: 100;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #945c54;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer_main {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.footer_column {
+  flex-basis: 200px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer_links {
+  display: block;
+  width: max-content;
+  padding: 5px 10px;
+  margin: auto;
+}
+
+form input {
+  width: 300px;
+  height: 35px;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+form input:hover {
+  transform: scale(1.1);
+}
+
+form button {
+  background: transparent;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 200px;
+}
+
+form button:hover {
+  color: #393E46;
+  background-color: white;
+}
+
+.footer_bottom {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.copyright {
+  margin-right: auto;
+}
+
+
+/*-----------------MEDIA QUERY----------------*/
+
+@media screen and (max-width:853px) {
+  .text_container {
+    font-size: 13px;
+  }
+
+  .text_container p {
+    font-size: 2vw;
+  }
+
+}
+
+@media screen and (min-width:1900px) {
+  .main .image_container {
+    height: 390px;
+    width: 390px;
+    margin-left: 20%;
+  }
+
+  .main .text_container {
+    margin-left: 5%;
+  }
+
+  .main {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,179 @@
+.main {
+  display: flex;
+}
+
+.main .women_banner1 {
+  display: flex;
+  background-image: url(../images/women.jpg);
+  height: 500px;
+  width: 55%;
+  margin-top: 3%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center 100%;
+}
+
+.banner_text h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin-top: 80%;
+  text-align: start;
+  background: rgba(0, 0, 0, .5);
+  padding: 15px;
+  position: relative;
+  right: 50%;
+}
+
+
+.main .women_banner2 {
+  display: flex;
+  background-image: url(../images/women\ walking.jpg);
+  height: 500px;
+  width: 30%;
+  margin-top: 3%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+
+}
+
+/*FOR FILTERING THE JACKET TYPES-----------------------*/
+
+.wrapper {
+  width: 95%;
+  margin-top: 23px;
+  text-align: center;
+}
+
+.wrapper .search_container {
+  margin: 1em 0;
+
+}
+
+.wrapper .search_container input {
+  background-color: transparent;
+  width: 40%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #393E46;
+  padding: 1em 0.3em;
+}
+
+.wrapper .search_container input:focus {
+  border-bottom-color: #393E46;
+}
+
+.wrapper .search_container .search_button {
+  padding: 1em;
+  margin-left: 1em;
+  background-color: #945c54;
+  color: #fff;
+  width: 100px;
+  border: none;
+  margin-top: 20px;
+}
+
+.wrapper .search_container .search_button:hover {
+  letter-spacing: 1px;
+}
+
+.wrapper .search_container .all_buttons button {
+  padding: 1em 2.2em;
+  background-color: #393E46;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper .search_container .all_buttons button:hover {
+  letter-spacing: 1px;
+}
+
+/*-------------------------DISPLAYING PRODUCT-CARD CONTAINING WOMEN'S JACKET IMAGES-------------------------------------*/
+
+h1.heading {
+  text-align: center;
+  color: #393E46;
+}
+
+.womenJacketContainer .womenJacket {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.womenJacketContainer .womenJacket .jacket {
+  border-radius: .5px;
+  background: #fcfbfa;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+
+.womenJacketContainer .womenJacket .jacket img {
+  height: 200px;
+  width: 175px;
+}
+
+.womenJacketContainer .womenJacket .jacket h3 {
+  color: #393E46;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.womenJacketContainer .womenJacket .jacket p {
+  color: #393E46;
+  font-size: 15px;
+  line-height: 1;
+}
+
+
+.womenJacketContainer .womenJacket .jacket:hover {
+  transform: scale(1.02);
+}
+
+.womenJacketContainer .womenJacket .jacket_title {
+  color: #393E46;
+
+}
+
+.jacket a {
+  text-decoration: none;
+}
+
+
+
+@media screen and (min-width:1900px) {
+  .main .women_banner1 {
+    height: 600px;
+    width: 50%;
+    margin-left: 10%;
+  }
+
+  .banner_text h1 {
+    margin-top: 50%;
+    margin-left: 20%;
+  }
+
+  .main .women_banner2 {
+    margin-right: 12%;
+    height: 600px;
+    width: 400px;
+  }
+
+  h1.heading {
+    font-size: 40px;
+    margin-top: 2%;
+  }
+
+  .wrapper {
+    margin-top: 5%;
+  }
+
+}
