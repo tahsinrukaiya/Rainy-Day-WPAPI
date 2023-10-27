@@ -1,6 +1,6 @@
 //fetching data from rainydays API
 
-const jacket_url = "https://rainyday.no/wc/store/products";
+const jacket_url = "https://rainyday.no/wp-json/wc/store/products";
 const products = document.querySelector(".products");
 
 
@@ -19,13 +19,13 @@ try {
     // <a href="productDetail.html?id=${jacket[i].id}&title=${jacket[i].title}" class="btn">Buy Now</a>
 
     for (let i = 0; i < jacket.length; i++) {
-      console.log(jacket[i].title);
+      console.log(jacket[i].name);
       products.innerHTML += `
         <div class="product">
-        <a class="main" href="productDetail.html?id=${jacket[i].id}&title=${jacket[i].title}">
-        <img src="${jacket[i].image}" class="product-image"/>
-        <h4 class="product_title">${jacket[i].title}</h4>
-        <p class="product_price">${jacket[i].price}kr</p>
+        <a class="main" href="productDetail.html?id=${jacket[i].id}&name=${jacket[i].name}">
+        <img src="${jacket[i].images[0].src}" class="product-image"/>
+        <h4 class="product_title">${jacket[i].name}</h4>
+        <p class="product_price">${jacket[i].prices.price}kr</p>
         <a class="favourite" href="favourite.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
         </div>
         </a>

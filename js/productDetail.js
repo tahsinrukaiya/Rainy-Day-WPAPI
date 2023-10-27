@@ -6,8 +6,8 @@ function getJacketIdFromQuery() {
 
 function getJacketTitleFromQuery() {
   const urlParams = new URLSearchParams(window.location.search);
-  console.log(urlParams.get("title"));
-  return urlParams.get("title");
+  console.log(urlParams.get("name"));
+  return urlParams.get("name");
 }
 
 //FUNCTION TO FETCH ITEM DETAIL USING ITEM ID AND TITLE-------------------------
@@ -21,28 +21,24 @@ async function fetchJacketDetail() {
     return;
   }
 
-  const response = await fetch(`https://api.noroff.dev/api/v1/rainy-days/${itemId}`);
+  const response = await fetch(`https://rainyday.no/wp-json/wc/store/products/${itemId}`);
   const jacketDetail = await response.json();
   const titleContainer = document.querySelector(".jacketTitle");
   const jacketDetailContainer = document.querySelector(".product_container");
 
 
-  //jacketDetailContainer.innerHTML += `<h2>${jacketDetail.id}: ${jacketDetail.setup}<h2>
-  // <p>${jacketDetail}</p>
-
-
   jacketDetailContainer.innerHTML =
     `<div class="product_container">
     <div class="image_container">
-    <img src="${jacketDetail.image}" alt ="brown jacket" class="image_container"/>
+    <img src="${jacketDetail.images[0].src}" alt ="brown jacket" class="image_container"/>
     </div>
     <div class="product_detail">
       <p class="jacketId">Product Id: ${jacketDetail.id}</p>
-      <h2 class="jacketTitle">${jacketDetail.title}<h2>
-          <h5 class="gender">Gender: ${jacketDetail.gender}<h5>
+      <h2 class="jacketTitle">${jacketDetail.name}<h2>
+          <h5 class="gender">Gender: ${jacketDetail.type}<h5>
           <h5 class="season">Season : Autumn/Spring</h5>
-          <h6 class="price">Price: ${jacketDetail.price}kr<h6>
-          <h5 class="basecolor">Color: ${jacketDetail.baseColor}<h5>
+          <h6 class="price">Price: ${jacketDetail.prices.price}kr<h6>
+        
           <div class="color">
           <span></span>
             <span></span>
@@ -66,7 +62,7 @@ async function fetchJacketDetail() {
             <button class="btn_checkOut">
               <a href="checkout.html" class="btn">Buy Now</a>
             </button>
-            <h3 class="description">${jacketDetail.description}</h3>
+            <h3 class="description">${jacketDetail.short_description}</h3>
     </div>
   </div>
   </div>
